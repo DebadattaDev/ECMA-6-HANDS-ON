@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Find and FindIndex</title>
+</head>
+<body>
+<script>
+	let data=[
+	{id:1,fruits1:"apple"},
+	{id:2,fruits2:"orange"},
+	{id:3,fruits3:"banana"},
+	]
+	let res=data.find(function(fruit){
+		return fruit.id;
+	})
+	console.warn(res);//gives full data
+
+	let res1=data.findIndex(function(fruit){
+		return fruit.id>2//gives Index;
+	})
+	console.warn(res1);
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Module </title>
+</head>
+<body>
+<script type="module" defer >
+    import User,{UserOther as UserO,UserVar,UserClass,UOC} from  './user.js'
+    function UserOther()
+    {
+    console.warn("in current file")
+    }
+    
+    let UC1= new UserClass();
+    UC1.test()
+   
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrow Function</title>
+</head>
+
+<body>
+	Arrow Function
+	<script>
+		let data=[10,2,5,6];
+		let newdata=data.map(function(item){
+		
+			return item*2;
+		})
+		console.warn(newdata);
+
+	let newArrow=data.map((item)=>item*2)
+	console.warn(newArrow);
+	</script>
+</body>
+</html>

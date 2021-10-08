@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lexical This</title>
+</head>
+<body>
+<script>
+	 let data={
+        list:'friend',
+        names:['komal','tez','sam'],
+        getFriends:function()
+           {
+            this.names.map((item)=>{
+            console.warn(this.list,item)
+            })
+           }
+       }
+
+       data.getFriends()
+</script>
+</body>
+</html>

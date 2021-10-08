@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>promise</title>
+</head>
+<body>
+	<script >
+		let a="deba"
+		let promisedata=new Promise((resolved,reject)=>
+		{
+			setTimeout(() => {
+            a="Hello ECMA"
+            resolved("done")
+        }, 3000);
+		})
+		promisedata.then(()=>{
+			alert(a);
+		})
+	</script>
+
+</body>
+</html>
